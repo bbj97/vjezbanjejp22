@@ -1,0 +1,37 @@
+i=1;
+j=1;
+i=i+j;
+i=2;
+j=i-j;
+j=1;
+i=2;
+j=1;
+
+i=i+j;
+i=3;
+j=i-j;
+j=2;
+...
+i=5;
+j=3;
+...
+i=8;
+j=5;
+...
+
+DRUGI NACIN:
+
+		int i=1;
+		int j=2;
+		int suma=2;
+		int trenutniBroj=0;
+		while(trenutniBroj<4000000) {
+			trenutniBroj=i+j;
+			i=j;
+			j=trenutniBroj;
+			if(trenutniBroj%2==0) {
+				suma=suma+trenutniBroj;
+			}
+		}
+		System.out.println(suma);
+		

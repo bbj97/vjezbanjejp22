@@ -1,0 +1,28 @@
+
+int i=13195;
+		int pbroj=1;
+		while(pbroj<i) {
+			pbroj++;
+			if(i%pbroj==0) {
+				int broj=i/pbroj;
+				
+				System.out.println(broj);
+				}
+			}
+		}
+
+
+
+
+
+	long i;
+		long n=6008514751431l;
+		for(i=2;i<600851475143l;i++) {
+			if(n%i==0) {
+				n/=i;
+				i--;
+			}
+		}
+		
+		System.out.println(i);
+		
